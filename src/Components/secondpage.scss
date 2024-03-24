@@ -1,0 +1,184 @@
+.first {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+
+  > h1 {
+    color: black;
+    font-size: 54px;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  > h3 {
+    color: #3b5266;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    max-width: 60%;
+    margin: auto;
+  }
+}
+
+.pallete {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  // justify-content: center;
+
+  > div {
+    height: 60vh;
+    width: 50%;
+  }
+}
+
+.img-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.put-img-one {
+  background: hsla(262, 77%, 90%, 1);
+
+  background: linear-gradient(
+    90deg,
+    hsla(262, 77%, 90%, 1) 0%,
+    hsla(207, 100%, 93%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    90deg,
+    hsla(262, 77%, 90%, 1) 0%,
+    hsla(207, 100%, 93%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    90deg,
+    hsla(262, 77%, 90%, 1) 0%,
+    hsla(207, 100%, 93%, 1) 100%
+  );
+
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#DFD0F9", endColorstr="#DBEFFF", GradientType=1 );
+  margin-top: 5%;
+  height: 84%;
+  width: 66%;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.second-text {
+  display: flex;
+  flex-direction: column;
+  gap:1rem;
+  // justify-content: space-;
+
+  > button {
+    margin-top: 14%;
+    background-color: #6016e3;
+    color: white;
+    font-size: 14px;
+    border-radius: 7px;
+    padding: 10px;
+    max-width: max-content;
+    border: none;
+    transition: background-color 500ms ease-in-out, color 500ms ease-in-out, font-weight 500ms ease-in-out;
+  }
+
+  > h1 {
+    line-height: 1.1;
+    text-align: left;
+    font-size: 50px;
+    font-weight: 600;
+    max-width: 70%;
+  }
+
+  > h3 {
+    color: #3b5266;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 300;
+    max-width: 70%;
+  }
+}
+
+.put-img-two {
+  background: hsla(262, 77%, 90%, 1);
+
+  background: linear-gradient(
+    90deg,
+    hsla(262, 77%, 90%, 1) 0%,
+    hsla(207, 100%, 93%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    90deg,
+    hsla(262, 77%, 90%, 1) 0%,
+    hsla(207, 100%, 93%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    90deg,
+    hsla(262, 77%, 90%, 1) 0%,
+    hsla(207, 100%, 93%, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#DFD0F9", endColorstr="#DBEFFF", GradientType=1 );
+  margin-top: 5%;
+  height: 84%;
+  width: 66%;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.img-div-two {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.second-text-two {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap:1rem;
+
+  > button {
+    margin-left: 17%;
+    text-align: left;
+    margin-top: 14%;
+    background-color: #6016e3;
+    color: white;
+    font-size: 14px;
+    border-radius: 7px;
+    padding: 10px;
+    max-width: max-content;
+    border: none;
+    transition: background-color 500ms ease-in-out, color 500ms ease-in-out, font-weight 500ms ease-in-out;
+}
+
+> h1 {
+    line-height: 1.1;
+    text-align: left;
+    font-size: 50px;
+    font-weight: 600;
+    max-width: 70%;
+    margin-left: 17%;
+}
+
+> h3 {
+      margin-left: 17%;
+    color: #3b5266;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 300;
+    max-width: 70%;
+  }
+}
+
+
+button:hover {
+  cursor: pointer;
+  background-color: black;
+  transition: 500ms ease-in-out;
+  font-weight: 700;
+}
