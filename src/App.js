@@ -1,27 +1,34 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./Components/Header.jsx";
-import Home from "./Components/Home.jsx";
-import Scroll from "./Components/Scroll.jsx";
-import PreLoader from "./Components/PreLoader.js";
-import SecondPage from "./Components/SecondPage.jsx";
-import Footer from "./Components/Footer.jsx";
+import Quiz from "./Components/Quiz.jsx";
+import FirstPage from "./Components/FirstPage.jsx";
+import Signin from "./Components/siginfolder/Signin.jsx"
+import Login from "./Components/loginfolder/Login.jsx"
+import PreLoader from "./Components/PreLoader.js"
+import AfterLogin from "./Components/afterLogin/AfterLogin.jsx";
+import AfterLoginCombined from "./Components/afterLogin/AfterLoginCombined.jsx";
 
 function App() {
+  
   return (
+    
     <>
-    <PreLoader /> 
+    {/* <PreLoader />  */}
     <Router>
-      <div className="App">
-        <Header/>
-        <Home />
-        <Scroll />
-        <SecondPage />
-        <Footer />
-        </div>
+        <Header />
+          
+        <Routes>
+        <Route path="/" element = {<FirstPage />}/>
+        <Route path="/quiz" element= {<Quiz />} />
+        <Route path="/signin" element= {<Signin />} />
+        <Route path="/login" element= {<Login />} />
+        <Route path="/AfterLog" element= {<AfterLoginCombined />} />
+        </Routes>
     </Router>
     </>
   );
 }
 
 export default App;
+

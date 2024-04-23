@@ -1,0 +1,16 @@
+.signup-form input[type="email"],
+.signup-form input[type="password"]  {
+    background-color: #ebebeb;
+    
+  margin: 2.5%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+}
+
+.login-mail, .login-password {
+    height: 35%;
+  width: 95%;
+}

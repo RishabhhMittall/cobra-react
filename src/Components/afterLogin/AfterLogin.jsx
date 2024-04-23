@@ -1,15 +1,13 @@
-import React from "react";
-import "./Home.scss";
-import changeImg from "../Components/utils/cover.jpg";
-import image1 from "../Components/utils/971.jpg";
-import image2 from "../Components/utils/aesthetic-lapy-1.jpg";
-// import image2 from "../Components/utils/man-with-laptop.png";
-import image3 from "../Components/utils/dataset-close-blur.jpg";
-import image4 from "../Components/utils/wallpaper-man.jpg";
-import image5 from "../Components/utils/eat-sleep.jpg";
+import image2 from "../utils/aesthetic-lapy-1.jpg";
+import image3 from "../utils/dataset-close-blur.jpg";
+import image4 from "../utils/wallpaper-man.jpg";
+import image5 from "../utils/eat-sleep.jpg";
 import { Link } from "react-router-dom";
+import './AfterLogin.scss';
+import React from 'react'
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
-const Home = () => {
+const AfterLogin = () => {
   return (
     <>
       <div className="main">
@@ -21,12 +19,7 @@ const Home = () => {
             </h3>
             <div>
               {/* <input type="text" placeholder="  name@email.com" /> */}
-              <Link to="/Login" style={{ textDecoration: "none" }}>
-                <button className="login">Login</button>
-              </Link>
-              <Link to="/Signin" style={{ textDecoration: "none" }}>
-                <button className="signup">SignUp</button>
-              </Link>
+              
             </div>
           </div>
         </div>
@@ -59,7 +52,7 @@ const Home = () => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Home;
+export default AfterLogin

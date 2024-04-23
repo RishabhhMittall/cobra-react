@@ -1,87 +1,84 @@
 .footer {
-    background-color: #6016e3;
-    width: 100%;
-    height: auto;
+  background-color: #6016e3;
+  width: 100%;
+  height: auto;
 }
-
 
 .sign {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 
-    >h2 {
-        margin-top: 8rem;
-        font-size: 54px;
-        color: white;
+  > h2 {
+    margin-top: 8rem;
+    font-size: 54px;
+    color: white;
+  }
+
+  > h4 {
+    font-size: 20px;
+    color: white;
+  }
+
+  > a > button {
+    margin: 2rem;
+    background-color: white;
+    color: #6016e3;
+    border: none;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px;
+    transition: background-color 500ms ease-in-out, color 500ms ease-in-out,
+      font-weight 500ms ease-in-out;
+
+    &:hover {
+      cursor: pointer;
+      background-color: black;
+      font-weight: 700;
+      transition: 500ms ease-in-out;
+      color: white;
     }
-
-    >h4 {
-        font-size: 20px;
-        color: white;
-    }
-
-    >button {
-        margin: 2rem;
-        background-color: white;
-        color: #6016e3;
-        border: none;
-        border-radius: 15px;
-        font-size: 20px;
-        font-weight: 500;
-        padding: 10px;
-        transition: background-color 500ms ease-in-out, color 500ms ease-in-out, font-weight 500ms ease-in-out, ;
-    }
-
+  }
 }
 
-
 .info {
-    display: flex;
-    justify-content: space-evenly;
-    color: white;
-    width: 100%;
-
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+  width: 100%;
 }
 
 .info > div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .info > div > p {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .phone {
-    padding-left: 10rem;
+  padding-left: 10rem;
 }
 
 .line {
-    margin: 5%;
-    height: 0.01rem;
-    max-width: 90%;
-    background-color:  rgba(255,255,255,0.4);
+  margin: 5%;
+  height: 0.01rem;
+  max-width: 90%;
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 .social {
-    height: 20vh;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
+  height: 20vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
-
-button:hover {
-    cursor: pointer;
-    background-color: black;
-    font-weight: 700;
-    transition: 500ms ease-in-out;
-    color: white;
-  }

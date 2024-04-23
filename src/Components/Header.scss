@@ -1,6 +1,4 @@
 
-
-
 .header {
     height: 50px;
     color: white;
@@ -25,12 +23,26 @@
     filter: invert(0); 
   }
   
-  .header.scrolled .left h2 {
+  .header.scrolled .left a {
     color: black;
-  }
+    transition: color 500ms ease-in-out;
 
+    &:hover {
+      color: #8b44f4;
+      transition: 500ms ease-in-out;
+    }
+    
+  }
+  
   .header.scrolled .center a{
     color: black;
+    transition: color 500ms ease-in-out;
+
+    &:hover {
+      color: #8b44f4;
+      transition: 500ms ease-in-out;
+    }
+    
   }
 
   
@@ -45,9 +57,16 @@
         filter: invert(1);
         margin-left: 20px;
       }
-      >h2 {
-        padding-left: .5rem;
-        font-size: 25px;
+      
+    >a {
+      padding-left: .5rem;
+      font-size: 25px;
+      font-weight: 650;
+      transition: color 500ms ease-in-out;
+      &:hover {
+        color: #8b44f4;
+        transition: 500ms ease-in-out;
+      }
     }
 
 }
@@ -60,26 +79,70 @@
     margin: 1vmax;
     font-size: 1.2rem;
     font-weight: 400;
+    transition: color 500ms ease-in-out;
+
+    &:hover {
+      color: #8b44f4;
+      transition: 500ms ease-in-out;
+    }
+    &:focus {
+      color: #8b44f4;
+      transition: 500ms ease-in-out;
+
+    }
    }
 }
 
 .right{
+
     margin-right: 10px;
-    >button {
-        background-color: #6016e3;
-        font-size: 15px;
-        border:none;
-        border-radius: 5px;
-        padding: 6px;
-        color: white;
-        font-weight: 600;
-        margin-right: 20px;
-        cursor: pointer;
-        transition: background-color 500ms ease-in-out, color 500ms ease-in-out, font-weight 500ms ease-in-out, ; 
-        
+    display: flex;
+    > a>button {
+      // background-color: #6016e3;
+      font-size: 15px;
+      border:none;
+      border-radius: 5px;
+      padding: 6px;
+      // color: white;
+      font-weight: 600;
+      margin-right: 20px;
+      cursor: pointer;
+      transition: background-color 500ms ease-in-out, color 500ms ease-in-out, font-weight 500ms ease-in-out, ; 
+      
       &:hover {
-        background-color: black;
+        background-color: black;  
         transition: 500ms ease-in-out;
       }
     }
+  }
+
+  .header-logout {
+    // background-color: #6016e3;
+    font-size: 15px;
+    border:none;
+    border-radius: 2px;
+    padding: 6px;
+    color: #6016e3;
+    font-weight: 600;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: background-color 500ms ease-in-out, color 500ms ease-in-out, font-weight 500ms ease-in-out, ; 
+    
+    &:hover {
+      background-color: black;  
+      color: white;
+      transition: 500ms ease-in-out;
+    }
+
+  }
+  
+.login {
+  background-color: white;
+  color: #6016e3;
+
+}
+
+.signup {
+  background-color: #6016e3;
+  color: white;
 }
