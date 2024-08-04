@@ -1,0 +1,120 @@
+.Faq {
+    /* font-family: sans-serif; */
+    text-align: center;
+    
+    
+  }
+  
+  .faqBox {
+    display: flex;
+    height: 90vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    background: hsla(215, 98%, 68%, 1);
+  
+    background: linear-gradient(
+      270deg,
+      #5da0fd 0%,
+      #6d23f6 24%,
+      #8134f4 54%,
+      #be9cf2 80%,
+      #ebe4f6 92%,
+      #faf9fb 100%
+    );
+  
+    background: -moz-linear-gradient(
+      270deg,
+      hsla(215, 98%, 68%, 1) 0%,
+      hsla(261, 92%, 55%, 1) 24%,
+      hsla(264, 90%, 58%, 1) 54%,
+      hsla(264, 77%, 78%, 1) 80%,
+      hsla(263, 50%, 93%, 1) 92%,
+      hsla(270, 25%, 98%, 1) 100%
+    );
+  
+    background: -webkit-linear-gradient(
+      270deg,
+      hsla(215, 98%, 68%, 1) 0%,
+      hsla(261, 92%, 55%, 1) 24%,
+      hsla(264, 90%, 58%, 1) 54%,
+      hsla(264, 77%, 78%, 1) 80%,
+      hsla(263, 50%, 93%, 1) 92%,
+      hsla(270, 25%, 98%, 1) 100%
+    );
+  
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5FA0FD", endColorstr="#6B21F6", GradientType=1);
+    
+  }
+  
+  .item {
+    background: #b6a5ff;
+    margin-bottom: 16px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    
+  }
+  
+  .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  .title > h2 {
+    font-weight: 500;
+  }
+  
+  .content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out; 
+    font-size: 48px;
+    
+  }
+  
+  .content.show {
+    max-height: 1000px;
+    
+  }
+  
+  .backgroundImage {
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .accordion {
+    width: 90vw;
+    padding: 8px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 12px;
+  }
+  
+  .heading {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+  }
+  
+  .plus {
+    font-size: 36px;
+    margin-right: 10px;
+  }
+  
+  .ans {
+    font-size: 16px;
+    font-weight: 450;
+    color: rgb(51, 48, 48);
+  }

@@ -1,15 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
-const QuizPlusBut = () => {
+const ContestPlusBut = () => {
   return (
     <div className="plus-button">
-      <Link to="/createquiz" style={{ textDecoration: "none" }}>
+      <Link to="/createcontest" style={{ textDecoration: "none" }}>
         <button>
-          + <br /> Build a Quiz
+          + <br /> Create Contest
         </button>
       </Link>
     </div>
   );
 };
 
-export default QuizPlusBut;
+export default ContestPlusBut;

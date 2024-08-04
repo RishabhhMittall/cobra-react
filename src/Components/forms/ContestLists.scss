@@ -1,0 +1,42 @@
+.contest-lists-main {
+    background: hsla(215, 98%, 68%, 1);
+
+  background: linear-gradient(
+    270deg,
+    #5da0fd 0%,
+    #6d23f6 24%,
+    #8134f4 44%,
+    #be9cf2 70%,
+    #ebe4f6 82%,
+    #faf9fb 100%
+  );
+
+  background: -moz-linear-gradient(
+    270deg,
+    hsla(215, 98%, 68%, 1) 0%,
+    hsla(261, 92%, 55%, 1) 24%,
+    hsla(264, 90%, 58%, 1) 44%,
+    hsla(264, 77%, 78%, 1) 70%,
+    hsla(263, 50%, 93%, 1) 82%,
+    hsla(270, 25%, 98%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    270deg,
+    hsla(215, 98%, 68%, 1) 0%,
+    hsla(261, 92%, 55%, 1) 24%,
+    hsla(264, 90%, 58%, 1) 44%,
+    hsla(264, 77%, 78%, 1) 70%,
+    hsla(263, 50%, 93%, 1) 82%,
+    hsla(270, 25%, 98%, 1) 100%
+  );
+
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5FA0FD", endColorstr="#6B21F6", GradientType=1);
+
+  height: 100vh;
+
+  >h1 {
+    text-align: center;
+  }
+
+}

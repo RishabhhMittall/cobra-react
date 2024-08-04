@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
-import "./Quiz.scss";
-import quizimg from "../Components/utils/quiz.jpg";
-import PlusButton from "./QuizPlusBut.jsx";
-import Footer from "./Footer.jsx";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
+import "./ContestLists.scss";
+import ContestPlusBut from "../ContestPlusBut.jsx";
+import quizimg from "../utils/quiz.jpg";
 import BusinessOutlinedIcon from "@mui/icons-material/BusinessOutlined";
 import EmailIcon from "@mui/icons-material/Email";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
@@ -11,56 +11,84 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
-const Quiz = () => {
-  const [quizzes, setQuizzes] = useState([]);
+const ContestList = () => {
+  const [contests, setContests] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
   const navigate = useNavigate();
 
-  const getQuizQuestions = async () => {
-    const response = await fetch("http://localhost:3001/api/v1/quiz/quizzess");
-    const res = await response.json();
-    setQuizzes(res);
-  };
-
   useEffect(() => {
-    getQuizQuestions();
+    const fetchContests = async () => {
+      try {
+        const response = await axios.get(
+          "http://localhost:3001/api/v1/contests/seeContests"
+        );
+        if (response.data.success && Array.isArray(response.data.data)) {
+          setContests(response.data.data);
+        } else {
+          throw new Error("Invalid contests data format");
+        }
+      } catch (error) {
+        setError("Error fetching contests");
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchContests();
   }, []);
 
-  // Calculate the height of the page based on the number of quiz cards
-  const pageHeight = Math.max(100, 350 + quizzes.length * 200); // Minimum height is 350vh
+  const handlePlayClick = (contestId) => {
+    // Handle play button click by navigating to ContestDetails
+    navigate(`/contest/${contestId}`);
+  };
+
+  const handleCreateContest = () => {
+    // Handle play button click by navigating to ContestDetails
+    navigate(`/createcontest`);
+  };
+
+  if (loading) {
+    return <p>Loading...</p>;
+  }
+
+  if (error) {
+    return <p>Error fetching contests: {error}</p>;
+  }
+
+  const pageHeight = Math.max(100, 350 + contests.length * 450);
 
   return (
     <div className="quiz-main" style={{ height: `${pageHeight}px` }}>
       <div className="main-container">
         <div className="quiz-content">
-          <h1>QuiZone</h1>
+          <h1>Contests</h1>
           <h3>
-            Dive Into a World of Knowledge and Fun with Our Engaging Quizzes!
+            Dive Into a World of Knowledge and Fun with Our Engaging Contests!
           </h3>
         </div>
       </div>
 
       <div className="quiz-container">
-        {quizzes.map((quiz) => (
-          <div className="quiz-card" key={quiz._id}>
+        {contests.map((contest) => (
+          <div className="quiz-card" key={contest._id}>
             <div className="quiz-image">
-              <img src={quizimg} alt={quiz.name} />
+              <img src={quizimg} alt={contest.name} />
             </div>
+
             <div className="quiz-details">
-              <h3>{quiz.name}</h3>
-              <div className="quiz-buttons">
-                <Link to={`/quiz/${quiz._id}`}>
-                  <button className="participate-btn" >Play</button>
-                </Link>
-              </div>
+              <h3>{contest.name}</h3>
+              <button className="participate-btn" onClick={() => handlePlayClick(contest._id)}>Play</button>
             </div>
-            <div className="quiz-details-hover">
-              <h3>{quiz.name}</h3>
+            <div>
+              
             </div>
           </div>
         ))}
-      <PlusButton />
+        <button onClick={() => handleCreateContest()}>
+              </button>
+        <ContestPlusBut />
       </div>
-
 
       <div className="quiz-footer">
         <div className="info">
@@ -112,4 +140,4 @@ const Quiz = () => {
   );
 };
 
-export default Quiz;
+export default ContestList;

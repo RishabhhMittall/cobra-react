@@ -1,81 +1,80 @@
-
 .header {
-    height: 50px;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: sticky;
-    z-index: 60;
-    top: 0;
-   background-color: #5f9afd;
-    
-      
+  height: 50px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  z-index: 60;
+  top: 0;
+  background-color: #5f9afd;
 }
 
-  .header.scrolled {
-    // background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
-    background-image: linear-gradient(to top, rgba(207, 217, 223, 0.6) 0%, rgba(226, 235, 240, 0.2) 100%);
-    transition: background-color 0.3s ease; 
-  }
-  
-  .header.scrolled .left img {
-    filter: invert(0); 
-  }
-  
-  .header.scrolled .left a {
-    color: black;
-    transition: color 500ms ease-in-out;
+.header.scrolled {
+  // background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+  background-image: linear-gradient(
+    to top,
+    rgba(207, 217, 223, 0.6) 0%,
+    rgba(226, 235, 240, 0.2) 100%
+  );
+  transition: background-color 0.3s ease;
+}
 
-    &:hover {
-      color: #8b44f4;
-      transition: 500ms ease-in-out;
-    }
-    
-  }
-  
-  .header.scrolled .center a{
-    color: black;
-    transition: color 500ms ease-in-out;
+.header.scrolled .left img {
+  filter: invert(0);
+}
 
-    &:hover {
-      color: #8b44f4;
-      transition: 500ms ease-in-out;
-    }
-    
-  }
+.header.scrolled .left a {
+  color: black;
+  transition: color 500ms ease-in-out;
 
-  
-  
+  &:hover {
+    color: #8b44f4;
+    transition: 500ms ease-in-out;
+  }
+}
+
+.header.scrolled .center a {
+  color: black;
+  transition: color 500ms ease-in-out;
+
+  &:hover {
+    color: #8b44f4;
+    transition: 500ms ease-in-out;
+  }
+  &:focus {
+    color: white;
+    transition: 500ms ease-in-out;
+  }
+}
 
 .left {
-    display: flex;
-    // padding-left: 20px;
-    >img {
-        height: 2rem;
-        padding-left: 5px;
-        filter: invert(1);
-        margin-left: 20px;
-      }
-      
-    >a {
-      padding-left: .5rem;
-      font-size: 25px;
-      font-weight: 650;
-      transition: color 500ms ease-in-out;
-      &:hover {
-        color: #8b44f4;
-        transition: 500ms ease-in-out;
-      }
-    }
+  display: flex;
+  // padding-left: 20px;
+  > img {
+    height: 2rem;
+    padding-left: 5px;
+    filter: invert(1);
+    margin-left: 20px;
+  }
 
+  > a {
+    padding-left: 0.5rem;
+    font-size: 25px;
+    font-weight: 650;
+    transition: color 500ms ease-in-out;
+    &:hover {
+      color: #8b44f4;
+      transition: 500ms ease-in-out;
+    }
+  }
 }
 
 .center {
-    width: 100%;
-    text-align: center;
+  width: 100%;
+  text-align: center;
 
-   >a {
+  > a {
     margin: 1vmax;
     font-size: 1.2rem;
     font-weight: 400;
@@ -88,61 +87,48 @@
     &:focus {
       color: #8b44f4;
       transition: 500ms ease-in-out;
-
-    }
-   }
-}
-
-.right{
-
-    margin-right: 10px;
-    display: flex;
-    > a>button {
-      // background-color: #6016e3;
-      font-size: 15px;
-      border:none;
-      border-radius: 5px;
-      padding: 6px;
-      // color: white;
-      font-weight: 600;
-      margin-right: 20px;
-      cursor: pointer;
-      transition: background-color 500ms ease-in-out, color 500ms ease-in-out, font-weight 500ms ease-in-out, ; 
-      
-      &:hover {
-        background-color: black;  
-        transition: 500ms ease-in-out;
-      }
     }
   }
+}
 
-  .header-logout {
+.right {
+  margin-right: 10px;
+  display: flex;
+  > a > button {
     // background-color: #6016e3;
     font-size: 15px;
-    border:none;
-    border-radius: 2px;
+    border: none;
+    border-radius: 5px;
     padding: 6px;
-    color: #6016e3;
+    // color: white;
     font-weight: 600;
     margin-right: 20px;
     cursor: pointer;
-    transition: background-color 500ms ease-in-out, color 500ms ease-in-out, font-weight 500ms ease-in-out, ; 
-    
+    transition: background-color 500ms ease-in-out, color 500ms ease-in-out,
+      font-weight 500ms ease-in-out;
+
     &:hover {
-      background-color: black;  
-      color: white;
+      background-color: black;
       transition: 500ms ease-in-out;
     }
-
   }
-  
+}
+
 .login {
   background-color: white;
   color: #6016e3;
-
 }
 
 .signup {
   background-color: #6016e3;
   color: white;
+}
+
+.head-user-details {
+  > button {
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
 }

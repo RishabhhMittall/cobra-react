@@ -19,15 +19,15 @@ const Home = () => {
             <h3>
               Experience the Venomous Rush of Real-Time Coding and Quizzing.
             </h3>
-            <div>
-              {/* <input type="text" placeholder="  name@email.com" /> */}
+            {/* <div>
+           
               <Link to="/Login" style={{ textDecoration: "none" }}>
                 <button className="login">Login</button>
               </Link>
               <Link to="/Signin" style={{ textDecoration: "none" }}>
                 <button className="signup">SignUp</button>
-              </Link>
-            </div>
+              </Link> */}
+            {/* </div> */}
           </div>
         </div>
         <div className="slider-frame">

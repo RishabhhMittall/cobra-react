@@ -1,0 +1,292 @@
+
+  .main {
+    font-family: sans-serif;
+    text-align: center;
+    /* padding: 0px;
+    margin: 0px; */
+  }
+  
+  .section1 {
+    /* background-image: url("https://framerusercontent.com/images/ZtG9iYkXfY619bGb2nGwvH3qc3s.svg"); */
+    display: block;
+    width: 99vw;
+    height: 100vh;
+    /* background-color: #8337f3; */
+    border-radius: inherit;
+    object-position: center center;
+    object-fit: cover;
+    image-rendering: auto;
+    background: hsla(215, 98%, 68%, 1);
+  
+    background: linear-gradient(
+      270deg,
+      #5da0fd 0%,
+      #6d23f6 24%,
+      #8134f4 44%,
+      #be9cf2 70%,
+      #ebe4f6 82%,
+      #faf9fb 100%
+    );
+  
+    background: -moz-linear-gradient(
+      270deg,
+      hsla(215, 98%, 68%, 1) 0%,
+      hsla(261, 92%, 55%, 1) 24%,
+      hsla(264, 90%, 58%, 1) 44%,
+      hsla(264, 77%, 78%, 1) 70%,
+      hsla(263, 50%, 93%, 1) 82%,
+      hsla(270, 25%, 98%, 1) 100%
+    );
+  
+    background: -webkit-linear-gradient(
+      270deg,
+      hsla(215, 98%, 68%, 1) 0%,
+      hsla(261, 92%, 55%, 1) 24%,
+      hsla(264, 90%, 58%, 1) 44%,
+      hsla(264, 77%, 78%, 1) 70%,
+      hsla(263, 50%, 93%, 1) 82%,
+      hsla(270, 25%, 98%, 1) 100%
+    );
+  
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5FA0FD", endColorstr="#6B21F6", GradientType=1);
+  }
+  .block1 {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 200px;
+  }
+  .p1 {
+    font-family: "Manrope", "Manrope Placeholder", sans-serif;
+    font-size: 68px;
+    font-weight: 800;
+    letter-spacing: -1.5px;
+    line-height: 1.1em;
+    margin-bottom: 40px;
+    color: #19154e;
+  }
+  .p2 {
+    font-family: "Manrope", "Manrope Placeholder", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    line-height: 1.4em;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #444255;
+  }
+  .img1 {
+    background-image:url("https://cdni.iconscout.com/illustration/premium/thumb/web-development-team-working-on-website-launch-5691625-4759507.png") ;
+    /* background-color: red; */
+    background-size: cover;
+    width: 700px;
+    height: 510px;
+    border-radius: 10px;
+  }
+  .first {
+    margin-left: 20px;
+    margin-right: 80px;
+  }
+  
+  
+  /* --------------Teams Styling-------------------- */
+  
+  .about{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .ourTeams{
+    font-family: "Manrope", "Manrope Placeholder", sans-serif;
+    font-weight: 800;
+    letter-spacing: 1px;
+    line-height: 1.5em;
+    font-size:medium;
+    color: #9b61fd;
+    padding-top: 80px;
+  }
+  .empower{
+    font-family: "Manrope", "Manrope Placeholder", sans-serif;
+    font-size: 48px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    line-height: 1.3em;
+    text-align: center;
+    color: #19154e;
+  }
+  .para{
+    place-content: center flex-start;
+      align-items: center;
+      display: flex;
+      flex: 0 0 auto;
+      flex-flow: column;
+      gap: 20px;
+      height: min-content;
+      max-width: 500px;
+      overflow: hidden;
+      padding: 0px;
+      position: relative;
+      width: 100%;
+  }
+  .pEnd{
+    font-family: "Manrope", "Manrope Placeholder", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0px;
+    line-height: 1.7em;
+    text-align: center;
+    color: #747474;
+  }
+  .gr{
+      display: grid;
+      flex: 0 0 auto;
+      gap: 60px;
+      grid-auto-rows: min-content;
+      grid-template-columns: repeat(3, minmax(200px, 1fr));
+      height: min-content;
+      justify-content: center;
+      max-width:100%;
+      padding-left: 160px;
+      padding-top: 80px;
+      position: relative;
+      width: 100%;
+      background-color: #f6f4ff;
+  }
+  .pic{
+    border-bottom-width: 1px;
+    border-color: rgba(0, 0, 0, 0.05);
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-style: solid;
+    border-top-width: 1px;
+    place-content: center flex-start;
+    align-items: center;
+    place-self: start;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 10px 20px -20px;
+    display: flex;
+    flex: 0 0 auto;
+    flex-flow: column;
+    gap: 20px;
+    height: min-content;
+    overflow: visible;
+    padding: 40px;
+    position: relative;
+    width: 100%;
+    background-color: white;
+    width: 400px;
+    height: 300px;
+  }
+  .gr2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 180px;
+    padding-left: 800px;
+    padding-bottom: 40px;
+  }
+  .image{
+    width: 200px;
+    height: 200px;
+  }
+  .name{
+    font-family: "Manrope", "Manrope Placeholder", sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    text-align: center;
+    color: #1a164f;
+  }
+  .role{
+      font-family: "Manrope", "Manrope Placeholder", sans-serif;
+      font-size: 18px;
+      font-weight: 500;
+      letter-spacing: 0px;
+      line-height: 1.7em;
+      text-align: center;
+      color: #6c6c6c;
+  }
+  
+  
+  /* ---------------------------- Middle.jsx --------------------------------------- */
+  .picture{
+      margin-top: 100px;
+      margin-bottom: 100px;
+      margin-left: 200px;
+      display: block;
+      width: 550px;
+      height: 392px;
+      border-radius: 10px;
+      object-position: center center;
+      object-fit: cover;
+      image-rendering: auto;
+  
+      /* background-image: url("https://framerusercontent.com/images/TaETUG0p3Ej7Ofd0f6CwsEg.jpg?scale-down-to=1024"); */
+      background-image: url("https://img.freepik.com/free-photo/surprised-curly-haired-girl-with-laptop-looking-excited_176420-20225.jpg?t=st=1714295999~exp=1714299599~hmac=2597263a216033533c3775c60a61c15624c55093c01ebe2dd055036ed0ea6d74&w=1380");
+      /* background-image: url("https://img.freepik.com/free-photo/young-couple-man-woman-holding-laptop-looking-it-confused-surprised-blue_141793-58330.jpg?t=st=1714296233~exp=1714299833~hmac=ea48607f6dd1914718ff9cb769fe0f1e9127a97bf45ecdfceb4afdbc6dc4063c&w=1060"); */
+      background-size: cover;
+  }
+  /* .main2{
+    height: 100vh;
+    width: 100vw;
+  } */
+  .tool{
+      font-family: "Manrope", "Manrope Placeholder", sans-serif;
+      font-weight: 800;
+      letter-spacing: 1px;
+      line-height: 1.5em;
+      text-align: center;
+      margin-top: 100px;
+      margin-left: 0px;
+      padding-left: 105px;
+      padding-bottom: 20px;
+      color: #8800ff;
+      text-align: left;
+  }
+  .pages{
+      font-family: "Manrope", "Manrope Placeholder", sans-serif;
+      font-size: 48px;
+      font-weight: 800;
+      letter-spacing: -1px;
+      line-height: 1.3em;
+      text-align: left;
+      padding-left: 100px;
+      color: #19154e;
+  }
+  .third{
+      font-family: "Manrope", "Manrope Placeholder", sans-serif;
+      font-size: 18px;
+      font-weight: 500;
+      letter-spacing: 0px;
+      line-height: 1.7em;
+      color: #90919c;
+      margin-left: -300px;
+      margin-top: 20px;
+  }
+  .check{
+      place-content: flex-start;
+      align-items: flex-start;
+      display: flex;
+      flex: 0 0 auto;
+      flex-flow: column;
+      gap: 10px;
+      height: min-content;
+      overflow: hidden;
+      padding-left: 100px;
+      padding-top: 30px;
+      position: relative;
+      width: 100%;
+  }
+  .checkIcon{
+    display: flex;
+  }
+  .checkText{
+      font-family: "Manrope", serif;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 800;
+      letter-spacing: 0px;
+      line-height: 1.2em;
+      text-align: start;
+      margin-left: 40px;
+      margin-top: 6px;
+  }
